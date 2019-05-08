@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Rohan More">
+        <title>ROFOUND Lost & Found</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+            <a class="navbar-brand" href="#">ROFOUND.COM</a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler5" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>             
+            <div class="collapse navbar-collapse" id="navbarToggler5"> 
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0"> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#">How-It-Works</a> 
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#">FAQs</a> 
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#">Campus Managers</a> 
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#">Sign-In</a> 
+                    </li>                     
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a> 
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink6"> 
+                            <a class="dropdown-item" href="#">Register</a> 
+                            <a class="dropdown-item" href="#">Return Found Item</a> 
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                            <a class="dropdown-item" href="#">Careers</a> 
+                        </div>                         
+                    </li>                     
+                </ul>                 
+            </div>             
+        </nav>
+        <div class="jumbotron">
+            <img class="mx-auto d-block img-fluid unlock-icon" src="../StickTags/Rofound%20Logo.png" width="150px" height="150px">
+            <h1 class="display-3" style="text-align: center; font-family: Comfortaa; font-size: 75px;">ROFOUND</h1> 
+            <p style="text-align: center; font-family: Comfortaa; font-size: 20px;">The Global Lost and Found Community</p>
+            <p class="text-center"> <button type="button" class="btn btn-dark bg-primary" data-toggle="modal" data-target="#modal1">Return Found Item</button><div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true"> 
+                    <div class="modal-dialog"> 
+                        <div class="modal-content"> 
+                            <div class="modal-header"> 
+                                <h4 class="col 12 modal-title text-center">Return Found Item</h4> 
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                 
+                            </div>                             
+                            <div class="modal-body"> 
+                                <p class="text-center">Please Enter Your Details</p>
+                                <form>
+                                    <div class="form-group"> 
+                                        <label for="form1FullName">Full Name</label>                                         
+                                        <input type="text" class="form-control" id="form1FullName" placeholder="eg: John Appleseed" required maxlength="50"> 
+                                    </div>
+                                    <div class="form-group"> 
+                                        <label for="form1MobileNumber">Mobile Number</label>                                         
+                                        <input type="tel" class="form-control" id="form1MobileNumber" placeholder="eg: 987654321" value required maxlength="10"> 
+                                    </div>
+                                    <div class="form-group"> 
+                                        <label for="form1Email">Email ID</label>                                         
+                                        <input type="email" class="form-control" id="form1Email" placeholder="eg: name@example.com" required> 
+                                    </div>
+                                    <div class="form-group"> 
+                                        <label for="form1Location">Location</label>                                         
+                                        <input type="text" class="form-control" id="form1Location" placeholder="eg: Viman Nagar, Pune" required> 
+                                    </div>
+                                </form>
+                            </div>                             
+                            <div class="modal-footer"> 
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>                                 
+                                <button type="button" class="btn btn-primary">Submit</button>                                 
+                            </div>
+                        </div>                         
+                    </div>                     
+                </div> </p> 
+        </div>
+        <div class="card-group text-center">
+            <div class="card"> 
+                <div class="card-body">
+                    <img src="assets/images/register.svg" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Register StickTags</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Register</a>
+                    </div>
+                </div>                 
+            </div>             
+            <div class="card"> 
+                <div class="card-body"> 
+                    <img src="assets/images/lost%20alert.svg" width="200px" height="200px" alt="lost item alert">
+                    <div class="card-body">
+                        <h5 class="card-title">Send Item Lost Alert</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Send Alert</a>
+                    </div>
+                </div>                 
+            </div>             
+            <div class="card"> 
+                <div class="card-body"> 
+                    <img src="assets/images/cart.svg" width="200px" height="200px" alt="cart">
+                    <div class="card-body">
+                        <h5 class="card-title">Buy StickTags</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Rofound Store</a>
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        <div class="container">
+</div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
