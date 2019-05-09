@@ -46,54 +46,92 @@
                 </ul>                 
             </div>             
         </nav>
-        <div class="jumbotron">
+        <div align="center" class="jumbotron">
             <img class="mx-auto d-block img-fluid unlock-icon" src="assets/images/Rofound%20Logo.png" width="150px" height="150px">
             <h1 class="display-3" style="text-align: center; font-family: Comfortaa; font-size: 75px;">ROFOUND</h1> 
             <p style="text-align: center; font-family: Comfortaa; font-size: 20px;">The Global Lost and Found Community</p>
-            <p class="text-center"> <button type="button" class="btn btn-dark bg-primary" data-toggle="modal" data-target="#modal1">Return Found Item</button><div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true"> 
-                    <div class="modal-dialog"> 
-                        <div class="modal-content"> 
-                            <div class="modal-header"> 
-                                <h4 class="col 12 modal-title text-center">Return Found Item</h4> 
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                 
-                            </div>                             
-                            <div class="modal-body"> 
-                                <p class="text-center">Please Enter Your Details</p>
-                                <form>
-                                    <div class="form-group"> 
-                                        <label for="form1FullName">Full Name</label>                                         
-                                        <input type="text" class="form-control" id="form1FullName" placeholder="eg: John Appleseed" required maxlength="50"> 
-                                    </div>
-                                    <div class="form-group"> 
-                                        <label for="form1MobileNumber">Mobile Number</label>                                         
-                                        <input type="tel" class="form-control" id="form1MobileNumber" placeholder="eg: 987654321" value required maxlength="10"> 
-                                    </div>
-                                    <div class="form-group"> 
-                                        <label for="form1Email">Email ID</label>                                         
-                                        <input type="email" class="form-control" id="form1Email" placeholder="eg: name@example.com" required> 
-                                    </div>
-                                    <div class="form-group"> 
-                                        <label for="form1Location">Location</label>                                         
-                                        <input type="text" class="form-control" id="form1Location" placeholder="eg: Viman Nagar, Pune" required> 
-                                    </div>
-                                </form>
-                            </div>                             
-                            <div class="modal-footer"> 
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>                                 
-                                <button type="button" class="btn btn-primary">Submit</button>                                 
-                            </div>
+            <input type="text" class="form-control text-center w-25" placeholder="Enter 12 Digit Code" maxlength="12">
+            <p></p>
+            <button type="button" class="btn btn-dark bg-primary" data-toggle="modal" data-target="#modal1">Return Found Item</button>
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true"> 
+                <div class="modal-dialog"> 
+                    <div class="modal-content"> 
+                        <div class="modal-header"> 
+                            <h4 class="col 12 modal-title text-center">Return Found Item</h4> 
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                             
                         </div>                         
+                        <div class="modal-body"> 
+                            <p class="text-center">Please Enter Your Details</p>
+                            <form class="text-left">
+                                <div class="form-group"> 
+                                    <label for="form1FullName">Full Name</label>                                     
+                                    <input type="text" class="form-control" id="form1FullName" placeholder="eg: John Appleseed" required maxlength="50"> 
+                                </div>
+                                <div class="form-group"> 
+                                    <label for="form1MobileNumber">Mobile Number</label>                                     
+                                    <input type="tel" class="form-control" id="form1MobileNumber" placeholder="eg: 987654321" value required maxlength="10"> 
+                                </div>
+                                <div class="form-group"> 
+                                    <label for="form1Email">Email ID</label>                                     
+                                    <input type="email" class="form-control" id="form1Email" placeholder="eg: name@example.com" required> 
+                                </div>
+                                <div class="form-group"> 
+                                    <label for="form1Location">Location</label>                                     
+                                    <input type="text" class="form-control" id="form1Location" placeholder="eg: Viman Nagar, Pune" required> 
+                                </div>
+                            </form>
+                        </div>                         
+                        <div class="modal-footer"> 
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>                             
+                            <button type="button" class="btn btn-primary">Submit</button>                             
+                        </div>
                     </div>                     
-                </div> </p> 
+                </div>                 
+            </div>                          
         </div>
         <div class="card-group text-center">
             <div class="card"> 
                 <div class="card-body">
                     <img src="assets/images/register.svg" width="200px" height="200px">
                     <div class="card-body">
-                        <h5 class="card-title">Register StickTags</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Register</a>
+                        <h5 class="card-title">Activate StickTags</h5>
+                        <p class="card-text">Activate your newly bought StickTags</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Register</a>
+                        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true"> 
+                            <div class="modal-dialog"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header">
+                                        <h4 class="col 12 modal-title text-center">Register StickTags</h4> 
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    </div>                                     
+                                    <div class="modal-body text-left"> 
+                                        <p>Sign-Up&nbsp;</p>
+                                        <form>
+                                            <div class="form-group"> 
+                                                <label for="regformname">Full Name</label>                                                 
+                                                <input type="text" class="form-control" id="regformname" placeholder="eg: John Appleseed"> 
+                                            </div>
+                                            <div class="form-group"> 
+                                                <label for="regformmobnum">Mobile Number</label>                                                 
+                                                <input type="tel" class="form-control" id="regformmobnum" placeholder="Enter 10 Digit Mobile Number" maxlength="10"> 
+                                            </div>
+                                            <div class="form-group"> 
+                                                <label for="regformaltnum">Alternate Number</label>                                                 
+                                                <input type="tel" class="form-control" id="regformalt" placeholder="Enter 10 Digit Alternate Number" maxlength="10"> 
+                                            </div>
+                                            <div class="form-group"> 
+                                                <label for="regformemail">Email ID</label>                                                 
+                                                <input type="email" class="form-control" id="regformemail" placeholder="eg: name@expample.com"> 
+                                            </div>                                             
+                                        </form>
+                                    </div>                                     
+                                    <div class="modal-footer"> 
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                         
+                                        <button type="button" class="btn btn-primary">Sign-Up</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
                     </div>
                 </div>                 
             </div>             
@@ -102,8 +140,36 @@
                     <img src="assets/images/lost%20alert.svg" width="200px" height="200px" alt="lost item alert">
                     <div class="card-body">
                         <h5 class="card-title">Send Item Lost Alert</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Send Alert</a>
+                        <p class="card-text">Send an alert to retrieve your item faster</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Send Alert</a>
+                        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true"> 
+                            <div class="modal-dialog"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h4 class="col 12 modal-title text-center">Send Item Lost Alert</h4> 
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                         
+                                    </div>                                     
+                                    <div class="modal-body text-left"> 
+                                        <p>Sign-In&nbsp;</p>
+                                        <form role="form"> 
+                                            <div class="form-group"> 
+                                                <label for="exampleInputEmail1">Email address</label>                                                 
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
+                                            </div>                                             
+                                            <div class="form-group"> 
+                                                <label for="exampleInputPassword1">Password</label>                                                 
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                <small>Forgot Password</small> 
+                                            </div>                                             
+                                        </form>                                         
+                                    </div>                                     
+                                    <div class="modal-footer"> 
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                         
+                                        <button type="button" class="btn btn-primary">Sign-In</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
                     </div>
                 </div>                 
             </div>             
@@ -112,11 +178,17 @@
                     <img src="assets/images/cart.svg" width="200px" height="200px" alt="cart">
                     <div class="card-body">
                         <h5 class="card-title">Buy StickTags</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Buy Rofound StickTags and KeyTags&nbsp;</p>
                         <a href="#" class="btn btn-primary">Rofound Store</a>
                     </div>
                 </div>                 
             </div>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-5">About Rofound</h1> 
+            <p class="lead"></p> 
+            <p>Rofound is a Global Lost &amp; Found Community.<br>It uses utility classes for typography and spacing to space content out within the larger container.</p> 
+            <p class="lead"> </p>
         </div>
         <div class="container">
 </div>
